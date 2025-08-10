@@ -334,7 +334,8 @@ namespace Console
             { "genesis", Color.blue },
             { "console", Color.gray },
             { "resurgence", new Color32(0, 1, 42, 255) },
-            { "grate", new Color32(195, 145, 110, 255) }
+            { "grate", new Color32(195, 145, 110, 255) },
+            { "Sodium", new Color32(220, 208, 255, 255) }
         };
 
         public static int TransparentFX = LayerMask.NameToLayer("TransparentFX");
