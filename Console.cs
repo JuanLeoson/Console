@@ -831,6 +831,16 @@ namespace Console
 
                         break;
 
+                    case "togglerain":
+                        for (int i = 0; i < BetterDayNightManager.instance.weatherCycle.Length; i++)
+                            BetterDayNightManager.instance.weatherCycle[i] = (bool)args[1] ? BetterDayNightManager.WeatherType.Raining : BetterDayNightManager.WeatherType.None;
+                        break;
+
+                    case "settime":
+                        //Morning: 1, Day: 3, Evening: 7, Night: 
+                        BetterDayNightManager.instance.SetTimeOfDay((int)args[1]);
+                        break;
+
                     // New assets
                     case "asset-spawn":
                         string AssetBundle = (string)args[1];
